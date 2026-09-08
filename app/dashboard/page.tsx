@@ -1,6 +1,10 @@
 export default function DashboardPage(){
     return (
+<<<<<<< HEAD
     <div className="p-6">
+=======
+    <div className=" dashboard p-6">
+>>>>>>> request-form
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
       <p>Welcome to your admin panel dashboard slot!</p>
 
@@ -20,9 +24,37 @@ export default function DashboardPage(){
       </div>     
 
       <div className="flex items-center w-full justify-between" > 
+<<<<<<< HEAD
         <p>Recent Requests</p> 
         <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors">+ New</button>
       </div>    
+=======
+        <h2>
+          Recent Requests
+        </h2> 
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors">
+          + New
+        </button>
+      </div>
+
+      <div className=" mt-6 grid grid-cols-[2fr_1fr_1fr_100px] gap-4 border-b py-4">
+        <div> Website Name</div>
+        <div> Date</div>
+        <div> Status</div>
+        <div> Action</div>
+      </div>
+
+      <div className=" mt-6 grid grid-cols-[2fr_1fr_1fr_100px] gap-4">
+        <div> Website Example</div>
+        <div> Aug 27, 2026</div>
+        <div> Approved</div>
+        <div>
+           <button>
+            View
+           </button>
+           </div>
+      </div>
+>>>>>>> request-form
 
     </div>
   );
