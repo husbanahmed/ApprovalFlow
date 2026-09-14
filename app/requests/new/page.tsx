@@ -8,6 +8,15 @@ export default function NewRequestPage() {
 
         const formData = new FormData(event.currentTarget)
 
+        const title = (formData.get("title"))
+        const description = (formData.get("description"))
+        const priority = (formData.get("priority"))
+
+        if(!title||!description||!priority){
+            alert("Please complete all the fields!")
+            return;
+        }
+
         console.log(formData.get("title"))
         console.log(formData.get("description"))
         console.log(formData.get("priority"))
@@ -39,7 +48,7 @@ export default function NewRequestPage() {
         <div className="text-left m-4">
             <p>Priority</p>
             <select name= "priority" className="border" >
-                <option value=""hidden> Please choose an option</option>
+                <option value="" hidden> Please choose an option</option>
                 <option>Low</option>
                 <option>Medium</option>
                 <option>High</option>
